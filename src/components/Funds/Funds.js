@@ -12,7 +12,17 @@ const Funds = () => {
 	const removeBalanceHandler = () => {
 		if (charityContext.personalBalance > 0) {
 			charityContext.removePersonalBalance();
-		}
+		} else {
+            alert("You don't have sufficient balance to reduce your balance");
+        }
+    };
+    
+    const addCharityBalanceHandler = () => {
+		if (charityContext.personalBalance > 0) {
+            charityContext.addCharityBalance();
+		} else {
+            alert("You don't have sufficient balance to fund");
+        }
 	};
 	return (
 		<>
@@ -39,7 +49,7 @@ const Funds = () => {
 					- 10000
 				</Button>
 				<Button
-					onClick={charityContext.addCharityBalance}
+					onClick={addCharityBalanceHandler}
 					className="action"
 					variant="outlined"
 					color="secondary"
