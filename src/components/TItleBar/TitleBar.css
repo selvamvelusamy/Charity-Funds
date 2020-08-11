@@ -1,0 +1,13 @@
+.titlebar-container {
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    padding: 16px;
+    background-color: rgb(129, 14, 236);
+    color: #fff;
+}
+
+.title {
+    font-size: 16px;
+    font-weight: bold;
+}

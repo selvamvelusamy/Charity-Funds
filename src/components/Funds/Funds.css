@@ -1,0 +1,14 @@
+.funds-container {
+    display: flex;
+    justify-content: center;
+    margin: 32px 0;
+}
+
+.action-buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.action-buttons .action {
+    margin-right: 12px;
+}

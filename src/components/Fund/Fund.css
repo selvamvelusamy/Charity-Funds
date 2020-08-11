@@ -1,0 +1,19 @@
+.fund-container {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    border: 2px solid rgb(129, 14, 236);
+    border-radius: 4px;
+    width: 200px;
+    margin: 16px;
+    padding: 16px;
+}
+.fund-container .title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.fund-container .amount {
+    font-size: 16px;
+}
