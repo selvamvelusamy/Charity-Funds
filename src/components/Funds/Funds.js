@@ -10,6 +10,12 @@ import { CharityContext } from "../../contexts/CharityContext/CharityContext";
 const Funds = () => {
 
     const charityContext = useContext(CharityContext);
+
+    const removeBalanceHandler = () => {
+        if(charityContext.personalBalance > 0) {
+            charityContext.removePersonalBalance();
+        }
+    }
     return (
     <>
     <TitleBar>ABC Charity</TitleBar>
@@ -19,8 +25,8 @@ const Funds = () => {
     </div>
     <div className="action-buttons">
     <Button onClick={charityContext.addPersonalBalance} className="action" variant="outlined" color="secondary">+ 10000</Button>
-            <Button className="action" variant="outlined" color="secondary">- 10000</Button>
-            <Button className="action" variant="outlined" color="secondary">Donate</Button>
+            <Button onClick={removeBalanceHandler} className="action" variant="outlined" color="secondary">- 10000</Button>
+            <Button onClick={charityContext.addCharityBalance} className="action" variant="outlined" color="secondary">Donate</Button>
     </div>
     </>
     );
