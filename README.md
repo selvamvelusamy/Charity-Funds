@@ -7,9 +7,9 @@ Node JS & npm
 
 ## Setting Up
  ```sh
-$ cd Charity-Funds
-$ npm i (or) yarn
-$ npm start
+cd Charity-Funds
+npm i (or) yarn
+npm start
 ```
  
 ## Testing
