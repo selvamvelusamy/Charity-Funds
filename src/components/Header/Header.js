@@ -2,10 +2,10 @@ import React from "react";
 
 import "./TitleBar.css";
 
-const TitleBar = (props) => (
+const Header = (props) => (
 	<div className="titlebar-container">
 		<span className="title">{props.children}</span>
 	</div>
 );
 
-export default TitleBar;
+export default Header;

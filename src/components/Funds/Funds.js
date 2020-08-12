@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { Button } from "@material-ui/core";
 
-import TitleBar from "../TitleBar/TitleBar";
+import Header from "../Header/Header";
 import "./Funds.css";
 import Fund from "../Fund/Fund";
 import { CharityContext } from "../../contexts/CharityContext/CharityContext";
@@ -26,7 +26,7 @@ const Funds = () => {
 	};
 	return (
 		<>
-			<TitleBar>ABC Charity</TitleBar>
+			<Header>ABC Charity</Header>
 			<div className="funds-container">
 				<Fund for={"Balance"}></Fund>
 				<Fund for={"Charity"}></Fund>
