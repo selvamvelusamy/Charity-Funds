@@ -1,6 +1,6 @@
 import React from "react";
 
-import "./TitleBar.css";
+import "./Header.css";
 
 const Header = (props) => (
 	<div className="titlebar-container">
